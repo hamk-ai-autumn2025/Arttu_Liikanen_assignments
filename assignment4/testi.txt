@@ -1,0 +1,18 @@
+Ydinvoimalan perusperiaate on seuraava:
+
+Fissio eli ydinhalkeaminen
+Ydinvoimalassa käytetään polttoaineena raskaita atomeja, kuten uraania (U-235) tai plutoniumia. Kun tällaisen atomin ytimeen osuu neutroni, ydin hajoaa kahdeksi kevyemmäksi ytimeksi. Samalla vapautuu suuri määrä lämpöenergiaa ja lisää neutroneita, jotka voivat halkaista uusia ytimiä. Tämä ketjureaktio on hallitusti käynnissä reaktorissa.
+
+Reaktorin hallinta
+Reaktoria ympäröi jäähdytysneste (esimerkiksi vesi), joka siirtää fissiossa vapautuneen lämmön eteenpäin. Säätösauvat (tehty yleensä boorista tai kadmiumista) imevät neutroneita ja säätelevät ketjureaktion nopeutta, jotta energiaa tuotetaan tasaisesti ja turvallisesti.
+
+Höyryn tuottaminen
+Reaktorissa syntynyt lämpö käytetään veden kuumentamiseen. Vesi muuttuu höyryksi, joka johdetaan turbiiniin.
+
+Sähkön tuotanto
+Höyry pyörittää turbiinia, joka puolestaan pyörittää generaattoria. Generaattori muuttaa liike-energian sähköenergiaksi. Tämä on sama perusidea kuin vesivoimalassa tai hiilivoimalassa, mutta lämmön lähde on eri.
+
+Jäähdytys ja höyryn palautus
+Kun höyry on pyörittänyt turbiinia, se jäähdytetään (esimerkiksi lauhduttimessa) ja palautetaan takaisin vedeksi. Vesi kierrätetään uudelleen reaktorille, ja prosessi jatkuu.
+
+Tärkeää on, että ydinvoimaloissa on moninkertaiset suojarakenteet (teräs, betoni, paineastia), jotta radioaktiiviset aineet eivät pääse ympäristöön. Polttoaineen loppupäähän liittyy käytetyn ydinpolttoaineen käsittely, joka on iso osa ydinenergian turvallisuutta ja politiikkaa.
