@@ -1,0 +1,147 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header and navigation */
+header nav {
+    background-color: #007bff;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Make logout form inline with other nav items */
+header nav .logout-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .logout-form button {
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin-left: 5px; /* optional spacing */
+    font-size: 1em;
+}
+
+header nav .logout-form button:hover {
+    color: #ffc107; /* optional hover color */
+}
+
+header nav a, header nav button {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    font-weight: bold;
+}
+
+/* Navigation bar */
+header nav.nav-bar {
+    background-color: #007bff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header nav.nav-bar a,
+header nav.nav-bar span,
+header nav.nav-bar button {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+header nav.nav-bar .logout-form {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+header nav.nav-bar .logout-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    margin-left: 10px;
+}
+
+header nav.nav-bar .logout-form button:hover {
+    color: #ffc107;
+}
+
+header nav button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 0;
+}
+
+/* Post list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Post content separate from author info */
+.post-content {
+    margin-bottom: 10px;
+    font-size: 1.05em;
+}
+
+.post-meta {
+    font-size: 0.85em;
+    color: #555;
+}
+
+/* Forms */
+form {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+form input, form textarea, form button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

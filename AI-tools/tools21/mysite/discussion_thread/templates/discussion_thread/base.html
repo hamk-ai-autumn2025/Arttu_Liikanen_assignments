@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Discussion Forum</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'discussion_thread/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-left">
+                <a href="{% url 'post-list' %}">Home</a>
+            </div>
+            <div class="nav-right">
+                {% if user.is_authenticated %}
+                    <span>Hello, {{ user.username }}!</span>
+                    <form method="POST" action="{% url 'logout' %}" class="logout-form">
+                        {% csrf_token %}
+                        <button type="submit">Logout</button>
+                    </form>
+                {% else %}
+                    <a href="{% url 'login' %}">Login</a> |
+                    <a href="{% url 'register' %}">Register</a>
+                {% endif %}
+            </div>
+        </nav>
+    </header>
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>

@@ -1,0 +1,31 @@
+{% extends "discussion_thread/base.html" %}
+{% block content %}
+<h1>{{ post.title }}</h1>
+<div class="post-content">{{ post.content }}</div>
+<div class="post-meta">by {{ post.author.username }} at {{ post.created_at }}</div>
+
+<h2>Comments</h2>
+<ul>
+    {% for comment in post.comments.all %}
+        <li>
+            <div class="post-content">{{ comment.content }}</div>
+            <div class="post-meta">{{ comment.author.username }} at {{ comment.created_at }}</div>
+        </li>
+    {% empty %}
+        <li>No comments yet!</li>
+    {% endfor %}
+</ul>
+
+{% if user.is_authenticated %}
+    <h3>Add a Comment</h3>
+    <form method="POST" action="{% url 'add-comment' post.pk %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Post Comment</button>
+    </form>
+{% else %}
+    <p><a href="{% url 'login' %}">Login</a> to comment.</p>
+{% endif %}
+
+<a href="{% url 'post-list' %}">Back to all posts</a>
+{% endblock %}
